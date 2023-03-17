@@ -33,20 +33,24 @@
     <img src="img/chitter.png" width="38px" height="38px" alt="chitterlogo">
       <div class="tweet-input" data-placeholder="Type something ..." contenteditable></div>
     </div>
-    <div class="posts">
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-    </div>
+    <div class="tweets">
+    
+    
+    <?php 
+require_once "conn.php";
+
+// Bereid je voor om alle tweets te pakken .
+$get_all_tweets = $conn->prepare("SELECT * from tweets");
+
+//Voer het uit
+$get_all_tweets->execute();
+$tweets = $get_all_tweets->fetchAll();
+
+//Pak alle tweets en laat ze een voor een zien.
+foreach ($tweets as $tweet) {
+    echo "<div class='post'>".  $tweet["Content"] ." </div> ";
+}
+?>
   </div>
   <div class="featured">
   <a class="login" href="">Login</a>
