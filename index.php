@@ -11,7 +11,7 @@
     <img class="logo" src="img/chitter.png" width="48px" height="48px" alt="chitterlogo">
     <ul>
       <li><a href="index.php">Home</a></li>
-      <li><a href="index.php">Profile</a></li>
+      <li><a href="index.php">Profiel</a></li>
       <li><a class="btn" href="">Tweet</a></li>
     </ul>
     <div class="spacer"></div>
@@ -54,7 +54,7 @@ foreach ($tweets as $tweet) {
   </div>
   <div class="featured">
   <a class="login" href="">Login</a>
-  <a class="registratie" href="registratie_formulier.php">Sign up</a>
+  <a class="registratie" href="registratie_formulier.php">Registreren</a>
 
   </div>
 </section>
