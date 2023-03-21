@@ -31,7 +31,7 @@
   <div class="feed">
     <div class="write-a-post">
     <img src="img/chitter.png" width="38px" height="38px" alt="chitterlogo">
-      <div class="tweet-input" data-placeholder="Type something ..." contenteditable></div>
+      <div class="tweet-input" data-placeholder="Type iets..." contenteditable></div>
     </div>
     <div class="tweets">
     
