@@ -10,7 +10,7 @@
     <img class="logo" src="img/chitter.png" width="48px" height="48px" alt="chitterlogo">
     <ul>
       <li><a href="index.php">Home</a></li>
-      <li><a href="index.php">Profile</a></li>
+      <li><a href="index.php">Profiel</a></li>
     </ul>
     <div class="spacer"></div>
 
@@ -20,7 +20,7 @@
     <div class="feed">
     <h1>Registratieformulier</h1>
     <form action="">
-        <label for="gebruikersnaam">Username</label>
+        <label for="gebruikersnaam">Gebruikersnaam</label>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
         <label for="wachtwoord">Wachtwoord</label>
         <input type="password" id="wachtwoord" name="wachtwoord" required>
@@ -29,7 +29,7 @@
     </div>
     <div class="featured">
   <a class="login" href="inlog_formulier.php">Login</a>
-  <a class="alreadysigningin" >Sign up</a>
+  <a class="alreadysigningin" >Registreren</a>
 
   </div>
 </section>
