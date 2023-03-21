@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chirpify.</title>
+    <title>Chirpify</title>
     <link rel="stylesheet" href="Main.css">
 </head>
 <body>
