@@ -19,7 +19,7 @@
   </div>
     <div class="feed">
     <h1>Registratieformulier</h1>
-    <form action="">
+    <form action="registratie.php" method="post">
         <label for="voornaam">Voornaam</label>
         <input type="text" id="voornaam" name="voornaam" required>
         <label for="achternaam">Achternaam</label>
@@ -29,8 +29,6 @@
         <label for="gebruikersnaam">Gebruikersnaam</label>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
         <label for="wachtwoord">Wachtwoord</label>
-        <input type="password" id="wachtwoord" name="wachtwoord" required>
-        <label for="wachtwoord">Wachtwoord herhalen</label>
         <input type="password" id="wachtwoord" name="wachtwoord" required>
         <input type="submit" value="Registreren">
     </form>
