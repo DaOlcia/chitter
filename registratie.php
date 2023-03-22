@@ -17,7 +17,7 @@
     $insert_user->bindParam(":wachtwoord", $wachtwoord);
    
     $password_difficulty = ['difficulty' => 11];
-    $hashed_password = password_hash($password, PASSWORD_BCRYPT, $password_difficulty);
+    $hashed_password = password_hash($wachtwoord, PASSWORD_BCRYPT, $password_difficulty);
     $insert_user->execute(header("location: registreren_succes.html"));
 
 
