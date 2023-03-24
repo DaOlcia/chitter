@@ -23,4 +23,10 @@
 
     $_SESSION("gebruikersnaam") = $gebruikersnaam
     header("location: registreren_succes.html");
+
+    if($insert_user->execute()){
+        echo "gebruiker is toegevoegd";
+    }else{
+        echo "gebruiker is niet toegevoegd";
+    }
     ?>
