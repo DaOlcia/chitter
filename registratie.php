@@ -23,3 +23,6 @@
 
     $_SESSION["gebruikersnaam"] = $gebruikersnaam;
     $insert_user->execute(header("location: logged_in_user.php"));
+
+    
+?>
