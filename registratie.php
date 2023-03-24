@@ -21,5 +21,5 @@
     $hashed_wachtwoord = password_hash($wachtwoord, PASSWORD_BCRYPT, $password_difficulty);
     
 
-    // $_SESSION("gebruikersnaam") = $gebruikersnaam;
+    $_SESSION["gebruikersnaam"] = $gebruikersnaam;
     $insert_user->execute(header("location: logged_in_user.php"));
