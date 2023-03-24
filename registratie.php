@@ -21,12 +21,5 @@
     $hashed_wachtwoord = password_hash($wachtwoord, PASSWORD_BCRYPT, $password_difficulty);
     
 
-    $_SESSION("gebruikersnaam") = $gebruikersnaam
-    header("location: registreren_succes.html");
-
-    if($insert_user->execute()){
-        echo "gebruiker is toegevoegd";
-    }else{
-        echo "gebruiker is niet toegevoegd";
-    }
-    ?>
+    // $_SESSION("gebruikersnaam") = $gebruikersnaam;
+    $insert_user->execute(header("location: logged_in_user.php"));
