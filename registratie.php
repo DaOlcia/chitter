@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once "conn.php";
 
 
@@ -20,5 +21,6 @@
     $hashed_wachtwoord = password_hash($wachtwoord, PASSWORD_BCRYPT, $password_difficulty);
     $insert_user->execute(header("location: registreren_succes.html"));
 
-
+    $_SESSION("gebruikersnaam") = $gebruikersnaam
+    header(header"location: index.php");
     ?>
