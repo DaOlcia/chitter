@@ -18,7 +18,7 @@
     </div>
   </div>
     <div class="feed">
-    <h1>Inloggen</h1>
+    <h1>Registratieformulier</h1>
     <form action="">
         <label for="gebruikersnaam">Gebruikersnaam</label>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
@@ -29,7 +29,7 @@
     </div>
     <div class="featured">
   <a class="login" href="inlog_formulier.php">Login</a>
-  <a class="registratie" href="registratie_formulier.php">Registreren</a>
+  <a class="alreadysigningin" >Registreren</a>
 
   </div>
 </section>

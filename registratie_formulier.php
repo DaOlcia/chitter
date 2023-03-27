@@ -34,8 +34,8 @@
     </form>
     </div>
     <div class="featured">
-  <a class="login" href="inlog_formulier.php">Login</a>
-  <a class="registratie" >Registreren</a>
+  <a class="login" href="">Login</a>
+  <a class="alreadysigningin" >Registreren</a>
 
   </div>
 </section>
