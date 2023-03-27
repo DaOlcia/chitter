@@ -34,5 +34,5 @@
         $_SESSION["gebruikersnaam"] = $gebruikersnaam;
         // strip_tags($_POST['username']);
         $stmt->execute(header("location: logged_in_user.php")); 
-    };
+    
 ?>
