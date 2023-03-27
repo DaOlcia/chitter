@@ -46,6 +46,15 @@
 
 
 
+//Pak alle tweets en laat ze een voor een zien.
+foreach ($tweets as $tweet) {
+    echo "<div class='post'>".  $tweet["Content"] ." </div> ";
+}
+?>
+  </div>
+  <div class="featured">
+  <a class="login" href="inlog_formulier.php">Login</a>
+  <a class="registratie" href="registratie_formulier.php">Registreren</a>
 
       <div class="featured">
         <a class="login" href="">Login</a>
