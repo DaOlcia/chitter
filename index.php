@@ -53,7 +53,7 @@ foreach ($tweets as $tweet) {
 ?>
   </div>
   <div class="featured">
-  <a class="login" href="">Login</a>
+  <a class="login" href="inlog_formulier.php">Login</a>
   <a class="registratie" href="registratie_formulier.php">Registreren</a>
 
   </div>

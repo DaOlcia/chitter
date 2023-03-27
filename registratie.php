@@ -2,9 +2,9 @@
     session_start();
     require_once "conn.php";
 
-
+    /// Strip tags betekend weghalen van ingevoerde code in de formulier/input
     $voornaam = strip_tags($_POST["voornaam"]);
-    $achternaam = strip_tags($_POST["voornaam"]);
+    $achternaam = strip_tags($_POST["achternaam"]);
     $email = strip_tags($_POST["email"]);
     $gebruikersnaam = strip_tags($_POST["gebruikersnaam"]);
     $wachtwoord = strip_tags($_POST["wachtwoord"]);
@@ -20,7 +20,7 @@
     $password_difficulty = ['difficulty' => 11];
     $hashed_wachtwoord = password_hash($wachtwoord, PASSWORD_BCRYPT, $password_difficulty);
     
-
+   
     $_SESSION["gebruikersnaam"] = $gebruikersnaam;
     $insert_user->execute(header("location: logged_in_user.php"));
 
