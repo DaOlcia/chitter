@@ -1,6 +1,7 @@
 <?php
-
+session_start()
 require_once "conn.php";
+
 
 
 
@@ -13,15 +14,13 @@ $query->bindParam(":gebruikersnaam", $gebruikersnaam);
 $query->execute();
 
 
-
-
-
 if ($query -> rowCount () == 1){
 
     $result = $query -> fetch (PDO::FETCH_ASSOC);
     if (password_verify ($wachtwoord, $result['Wachtwoord'])){
-    $_SESSION['account_id'] = $result['id'];
-    $_SESSION['gebruikersnaam'] = $gebruikersnaam;
+        $_SESSION["gebruikersnaam"] = $gebruikersnaam;
+        $insert_user->execute(header("location: logged_in_user.php"));
+    
     echo "<div class='inloggen'>ingelogd als: " . $gebruikersnaam . "</div>";
     echo $_SESSION['account_id'];
     } else {
@@ -30,25 +29,7 @@ if ($query -> rowCount () == 1){
     
     }
 
-
-
-
-
-
-
-//Schrijf een query die de user uit de database haalt
-//SELET * FROM account WHERE username = :$_POST['username']
-
-// $sql= $conn->prepare("SELECT * FROM users WHERE Gebruikersnaam AND Wachtwoord) VALUES( :geruikersnaam, :wachtwoord)=:$_POST['Gebruikersnaam'], $_POST['Wachtwoord']");
-
-//dan krijg je de user ALS die bestaat (+ zijn/haar wachtwoord)
-//if (ingelogdeGebruiker( $inputGebruikersnaam, $inputWachtwoord) > 1) {
-   //     echo "<br> Welkom!"; 
-  //  }
-
-
-//Dan vergelijk je. Is het wachtwoord $wachtwoord gelijk aan het wachtwoord in de database?
-//Zo ja? Ingelogd! (Echo voor nu even echo ïngelogd")
+    
 
 ?>
 
