@@ -19,7 +19,7 @@
   </div>
     <div class="feed">
     <h1>Inloggen</h1>
-    <form action="inlog.php">
+    <form action="inlog.php" method="post">
         <label for="gebruikersnaam">Gebruikersnaam</label>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
         <label for="wachtwoord">Wachtwoord</label>

@@ -1,4 +1,4 @@
-<?php require_once('show_all_tweets.php') ?>
+
 
 
 <!DOCTYPE html>
@@ -39,26 +39,20 @@
     <div class="feed">
       <div class="write-a-post">
         <img src="img/chitter.png" width="38px" height="38px" alt="chitterlogo">
-        <div class="tweet-input" data-placeholder="Typ iets..." contenteditable></div>
+      <textarea class="tweet-input"></textarea>
+      
+          <?php require_once('show_all_tweets.php') ?>
+        </div>
       </div>
-      <div class="post"></div>
     </div>
 
 
 
-//Pak alle tweets en laat ze een voor een zien.
-foreach ($tweets as $tweet) {
-    echo "<div class='post'>".  $tweet["Content"] ." </div> ";
-}
-?>
+
   </div>
   <div class="featured">
   <a class="login" href="inlog_formulier.php">Login</a>
   <a class="registratie" href="registratie_formulier.php">Registreren</a>
-
-      <div class="featured">
-        <a class="login" href="">Login</a>
-        <a class="registratie" href="registratie_formulier.php">Registreren</a>
       </div>
   </section>
 </body>

@@ -17,7 +17,7 @@
     $insert_user->bindParam(":gebruikersnaam", $gebruikersnaam);
     $insert_user->bindParam(":wachtwoord", $hashed_wachtwoord);
   
-    $sql = "SELECT COUNT(*) AANTAL FROM account WHERE email = :un";
+    $sql = "SELECT COUNT(*) AANTAL FROM users WHERE email = :un";
     $stmt = $conn->prepare($sql);
     $stmt->execute(["un" => $_POST['email']]);
     $aantal = $stmt->fetchColumn();
