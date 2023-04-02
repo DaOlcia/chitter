@@ -25,7 +25,7 @@ require_once "conn.php";
     </div>
   </div>
     <div class="feed">
-    <h1>Inloggen</h1>
+    <h1>Fout inloggegevens. Probeer opnieuw</h1>
     <form action="inlog.php" method="post">
         <label for="gebruikersnaam">Gebruikersnaam</label>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>

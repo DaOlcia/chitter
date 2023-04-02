@@ -1,11 +1,13 @@
 <?php
+    session_start(); 
     require_once "conn.php";
-
-    $content = $_POST["content"];
     
-    $insert_tweets = $conn->prepare("INSERT INTO tweets(content) VALUES( :content)");
-    $insert_user->bindParam(":content", $content);
-    
-    $insert_user->execute();
+    $content = strip_tags($_POST["content"]);
 
+        
+        $insert_tweets = $conn->prepare("INSERT INTO tweets(Content) VALUES( :content)");
+        $insert_tweets->bindParam(":content", $content);
+    
+        $insert_tweets->execute(header("location: logged_in_user.php"));
+    
     ?>

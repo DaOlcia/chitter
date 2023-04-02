@@ -18,7 +18,7 @@
     
     $_SESSION["gebruikersnaam"] = $gebruikersnaam;
 
-    // als $aantal 1 is dan bestaat de email al en wordt de door gestuurd naar een self gemaakte fail page        
+    // als $aantal 1 is dan bestaat de email al en wordt de door gestuurd naar een zelf gemaakte fail page        
     if($aantal == 1){ 
         header("location : fail_pagina"); 
     } else { 

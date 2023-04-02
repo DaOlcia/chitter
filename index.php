@@ -37,10 +37,10 @@
     <div class="feed">
       <div class="write-a-post">
         <img src="img/chitter.png" width="38px" height="38px" alt="chitterlogo">
-      <textarea class="tweet-input"></textarea>
-      
+        <div class="tweet-input" data-placeholder="Log in om tweets te kunnen posten" contenteditable></div>
+          </div>
           <?php require_once('show_all_tweets.php') ?>
-        </div>
+        
       </div>
     </div>
 
