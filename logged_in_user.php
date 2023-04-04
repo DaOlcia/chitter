@@ -48,7 +48,8 @@ require_once "conn.php";
          <textarea rows="3" cols="50"  name="content" > </textarea>
          <input type="submit" value="Post je tweet!"> 
          </form> 
-          <?php require_once('show_all_tweets.php') ?>
+          <?php require_once('show_all_tweets.php')?>
+          
         </div>
       </div>
     </div>

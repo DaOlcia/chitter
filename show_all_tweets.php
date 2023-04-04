@@ -10,6 +10,6 @@ $tweets = $get_all_tweets->fetchAll();
 
 //Pak alle tweets en laat ze een voor een zien.
 foreach ($tweets as $tweet) {
-    echo "<div class='post'>".  $tweet["Content"] ." </div> ";
+    echo "<div class='post'>".  $tweet["Content"] ." <button name='delete'</button></div> ";
 }
 ?>
