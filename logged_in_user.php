@@ -19,7 +19,7 @@ require_once "conn.php";
       <h1> Welkom  <?php echo "$_SESSION[gebruikersnaam]";  ?> </h1> 
       <ul>
         <li><a href="">Home</a></li>
-        <li><a href="">Profiel</a></li>
+        <li><a href="profiel_bewerken.php">Profiel</a></li>
       </ul>
 
 
