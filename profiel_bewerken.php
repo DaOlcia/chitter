@@ -1,39 +1,19 @@
 <?php
-
-
-
-
 session_start();
 
 require_once "conn.php";
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
-
 <html lang="en">
-
-
-
-
 <head>
-
-  <title>Chirpify</title>
-
-  <link rel="stylesheet" href="main.css">
+<title>Chirpify</title>
+ <link rel="stylesheet" href="main.css">
 
 </head>
-
-
-
-
 <body>
-
-  <section class="homepage homeregistratie">
+<section class="homepage homeregistratie">
 
     <div class="sidebar">
 
@@ -97,17 +77,10 @@ require_once "conn.php";
     <input type="password" id="wachtwoord" name="wachtwoord">
 
     <input type="submit" value="Profiel bewerken" name="profielbewerken1">
-
     </form></div> ';
       }
 
-
-
-
-
-
-
-      ?>
+ ?>
 
 
 
