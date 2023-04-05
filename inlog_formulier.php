@@ -38,6 +38,8 @@ require_once "conn.php";
   <a class="login" href="inlog_formulier.php">Login</a>
   <a class="registratie" href="registratie_formulier.php">Registreren</a>
 
+  
+
   </div>
 </section>
 </body>
