@@ -6,7 +6,7 @@ if (!isset($_SESSION['Gebruikersnaam'])) {
 
 }
 
- $tweet_id = $_SESSION['tweet_id'];
+  $tweet_id = $_SESSION['tweet_id'];
 $user_id = $_SESSION['account_id'];
 
 
@@ -22,5 +22,5 @@ $delete_tweet = $conn->prepare("DELETE FROM tweets WHERE id = ? AND account_id =
 $delete_tweet->execute([$tweet_id, $user_id]);
 
 
-header("Location: logged_in_user.php ");
+header("Location: logged_in_user.php");
 ?>
