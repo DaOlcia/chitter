@@ -12,7 +12,7 @@ $tweets = $get_all_tweets->fetchAll();
 
 // Display all tweets one by one
 foreach ($tweets as $tweet) {
-    echo "<div class='post'>".  $tweet["Gebruikersnaam"] . $tweet["content"] ." <br> Likes: " . $tweet["likes"] . "
+    echo "<div class='post'>".  $tweet["Gebruikersnaam"] . ":" . $tweet["content"] ." <br> Likes: " . $tweet["likes"] . "
     <form class='likebutton' action='like.php' method='post'><button  value='" . $tweet['id'] . "'  name='like'>like</button>" .
    "<form action='delete.php' method='POST'>
    <button class='deletebutton' name='delete'value='" . $tweet['id'] . "'>Delete</button> </form></form></div>" ;
