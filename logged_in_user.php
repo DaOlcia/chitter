@@ -34,6 +34,7 @@ $_SESSION["email"] = $account_email;
       <ul>
         <li><a href="">Home</a></li>
         <li><a href="profiel_bewerken.php">Profiel</a></li>
+        <li><a href="index.php">Logout</a></li>
       </ul>
 
       <div class="spacer"></div>
