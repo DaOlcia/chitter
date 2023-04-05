@@ -2,17 +2,28 @@
 session_start();
 require_once "conn.php";
 
-$sql = "UPDATE * FROM tweets WHERE";
-$stmt = $conn->prepare($sql);
-$stmt->execute();
+if(isset($_POST['like'])) {
+    $tweet_id = intval($_POST['like']);
+    $account_id =  $_SESSION["account_id"];
+  
+    $query = $conn->prepare("SELECT * FROM likes WHERE account_id = :account_id AND tweets_id = :tweet_id");
+    $query->bindParam(":account_id", $account_id);
+    $query->bindParam(":tweet_id", $tweet_id);
+    $query->execute();
+    $liked = $query->fetch(PDO::FETCH_ASSOC);
 
-$ingelogdAls = "userid";
+    if(!$liked) { 
+        $query = $conn->prepare("UPDATE tweets SET likes = likes + 1 WHERE id = :id");
+        $query->bindParam(":id", $tweet_id);
+        $query->execute();
 
-while ($row = $stmt->fetch(POD::FETCH_OBJ)) {
-
-    $lnk = "<br><a href='proclick.php?wid=" . $row->id . "&userid=$inlogdAls'>Like dit bericht</a> aantal keren geliked: " . $row->likes . ".";
-   
-    echo "<br>" . $row->id . ") " . $row->berichttekst 
-    . "<strong>likes: " . $row->likes . "</strong> $lnk";
-    echo "<hr>";
+        $query = $conn->prepare("INSERT INTO likes (account_id, tweets_id) VALUES (:account_id, :tweet_id)");
+        $query->bindParam(":account_id", $account_id);
+        $query->bindParam(":tweet_id", $tweet_id);
+        $query->execute();
+    }
 }
+
+header("Location: logged_in_user.php");
+exit();
+?>

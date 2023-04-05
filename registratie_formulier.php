@@ -55,14 +55,10 @@
         <input type="email" id="email" name="email" required>
 
         <label for="gebruikersnaam">Gebruikersnaam</label>
-
-        <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
-
-        <label for="wachtwoord">Wachtwoord</label>
-
-        <input type="password" id="wachtwoord" name="wachtwoord" required>
-
-        <input type="submit" value="Registreren">
+<input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
+<label for="wachtwoord">Wachtwoord</label>
+<input type="password" id="wachtwoord" name="wachtwoord" required>
+        <input type="submit" name="submit" value="Registreren">
 
       </form>
 
