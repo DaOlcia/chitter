@@ -25,7 +25,7 @@ $nieuwe_gebruikersnaam = strip_tags($_POST['nieuwe_gebruikersnaam']);
 
 
     }
-    
+    header("location: profiel_bewerken.php");
     exit();
 }
 

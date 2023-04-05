@@ -18,8 +18,8 @@ require_once "conn.php";
     <div class="sidebar">
       <img class="logo" src="img/chitter.png" width="48px" height="48px" alt="chitterlogo">
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="index.php">Profiel</a></li>
+        <li><a href="logged_in_user.php">Home</a></li>
+        <li><a href="profiel_bewerken.php">Profiel</a></li>
       </ul>
       <div class="spacer"></div>
     </div>
@@ -37,7 +37,7 @@ require_once "conn.php";
 
         $resultaat = $query->fetchAll();
         foreach ($resultaat as $gebruiker) {
-        echo '<div class="post"><form action="profiel_bewerken_vervolg.php" method="post">'.  $gebruiker["Gebruikersnaam"] .'                      
+        echo '<div class="post"><form action="profiel_bewerken_vervolg.php" method="post">                      
         <label for="gebruikersnaam">Gebruikersnaam</label>
         <input type="text" id="gebruikersnaam" name="gebruikersnaam">
         <label for="nieuwe_gebruikersnaam">Nieuwe gebruikersnaam</label>
