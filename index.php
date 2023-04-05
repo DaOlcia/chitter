@@ -22,10 +22,7 @@
 
       <div class="account">
         <img src="img/chitter.png" width="38px" height="38px" alt="chitterlogo">
-        <div class="user-details">
-          <p>John doe</p>
-          <p>@johndoe</p>
-        </div>
+
         <div class="menuicon">
           <span></span>
           <span></span>
