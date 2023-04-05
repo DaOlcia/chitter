@@ -1,3 +1,4 @@
+
 <?php 
 require_once "conn.php";
  // start the session to access $_SESSION variables
@@ -14,8 +15,9 @@ $tweets = $get_all_tweets->fetchAll();
 foreach ($tweets as $tweet) {
     echo "<div class='post'>".  $tweet["Gebruikersnaam"]. ":" . $tweet["content"] ." <br> Likes: " . $tweet["likes"] . "
     <form class='likebutton' action='like.php' method='post'><button  value='" . $tweet['id'] . "'  name='like'>like</button></form>" .
-   "<form action='delete.php' method='POST'>
+   "<form class='deleteknop' action='delete.php' method='POST'>
    <button class='deletebutton' name='delete' value='" . $tweet['id'] . "'>Delete</button> </form></div>" ;
     $_SESSION['tweet_id'] =  $tweet['id'];
 }
    
+?>
