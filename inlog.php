@@ -18,7 +18,7 @@ if ($query -> rowCount() == 1){
     // echo "<pre>".print_r($result, true)."</pre>";
     
 
-    if (password_verify ($wachtwoord, $result['Wachtwoord'])) {
+    if (password_verify ($wachtwoord, $result['wachtwoord'])) {
         $_SESSION["gebruikersnaam"] = $gebruikersnaam;
        // $insert_user->execute(header("location: logged_in_user.php"));
         header("location: logged_in_user.php");
