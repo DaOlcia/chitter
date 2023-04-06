@@ -229,9 +229,11 @@ input {
 .likebutton {
     display: inline-block;
     margin: 5px;
+    color: #1DA1F2;
 }
 
 .deleteknop{
     display: inline-block;
     margin: 5px;
+    color: #1DA1F2;
 }
